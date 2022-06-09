@@ -40,13 +40,23 @@ def timeElapsed(start_time,end_time):
     return end_time - start_time
 
 if __name__ == '__main__':
-    prompt= "This is my python mini project for testing typing speed "
-    print("Type this :- ",prompt,"'")
+    import random
+
+    eg1 = "Python is a OOP language released in 1991."
+    eg2 = "Shri Bhagubhai Mafatlal Polytechnic"
+    eg3 = "Python is a high-level, interpreted, general-purpose programming language."
+
+    list = [eg1, eg2, eg3]
+    prompt = random.choice(list)
+
+
+    print("Type this :- ",prompt)
 
     #input
     input("press ENTER when you are ready ")
 
     #recording time taken to input
+
     stime = time()
     iprompt= input()
     etime = time()
@@ -59,8 +69,6 @@ if __name__ == '__main__':
     print("Total time Elapsed : ",time,"s")
     print("your average speed was: ",speed,"words/minute")
     print("with a total of ",errors,"errors")
-
-
 
 
 
