@@ -18,7 +18,7 @@ def typeErrors(prompt):
                 if ((iwords[i+1] == words[i+1]) & (iwords[i-1]== words[i-1])):
                     continue
                 else:
-                    errors+=1
+                    errors+=2
             else:
                 errors+=1
 
